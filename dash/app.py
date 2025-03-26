@@ -6,9 +6,8 @@ import pandas as pd
 import requests
 from datetime import datetime
 
-# Функция получения данных из NocoDB (исправлен URL)
 def get_nocodb_data():
-    url = "http://localhost:8000/nocodb-data/"  # Исправлен URL
+    url = "http://backend:8000/nocodb-data/"
     try:
         response = requests.get(url)
         if response.status_code == 200:
@@ -16,7 +15,6 @@ def get_nocodb_data():
             records = data.get('records', [])
             print("Полученные данные:", records)
             
-            # Очистка данных
             cleaned_records = []
             for record in records:
                 clean_record = {
@@ -41,7 +39,6 @@ def get_nocodb_data():
         print(f"Ошибка соединения: {e}")
         return pd.DataFrame()
 
-# Инициализация приложения Dash
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
@@ -67,15 +64,13 @@ def update_dashboard(n):
             html.P('Нет данных для отображения.'),
             html.P('Проверьте соединение с NocoDB.')
         ], style={'textAlign': 'center'})
-    
-    # Преобразование дат
+
     try:
         df['Created At'] = pd.to_datetime(df['Created At']).dt.strftime('%Y-%m-%d %H:%M')
         df['Updated At'] = pd.to_datetime(df['Updated At']).dt.strftime('%Y-%m-%d %H:%M')
     except Exception as e:
         print(f"Ошибка преобразования дат: {e}")
     
-    # Создание визуализаций
     role_distribution = df['Role'].value_counts().reset_index()
     role_distribution.columns = ['Role', 'Count']
     
@@ -87,7 +82,6 @@ def update_dashboard(n):
         hole=0.3
     )
     
-    # Таблица данных
     columns = [
         {'name': 'ID', 'id': 'ID'},
         {'name': 'Имя', 'id': 'First Name'},
@@ -142,6 +136,5 @@ def update_dashboard(n):
         ], className='m-2')
     ])
 
-# Запуск приложения
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=8050, debug=True)
+    app.run(host='0.0.0.0', port=8050, debug=True)
