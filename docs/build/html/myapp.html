@@ -211,6 +211,140 @@ one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
 
 </dd></dl>
 
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.models.UserProfile">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.models.</span></span><span class="sig-name descname"><span class="pre">UserProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password_hash</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contact_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated_at</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.UserProfile" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(in Django v5.1)"><em>BigAutoField</em></a>) – Primary key: ID</p></li>
+<li><p><strong>first_name</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><em>CharField</em></a>) – First name</p></li>
+<li><p><strong>last_name</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><em>CharField</em></a>) – Last name</p></li>
+<li><p><strong>username</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><em>CharField</em></a>) – Username</p></li>
+<li><p><strong>password_hash</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><em>CharField</em></a>) – Password hash</p></li>
+<li><p><strong>role</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><em>CharField</em></a>) – Role</p></li>
+<li><p><strong>contact_info</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.TextField" title="(in Django v5.1)"><em>TextField</em></a>) – Contact info</p></li>
+<li><p><strong>created_at</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(in Django v5.1)"><em>DateTimeField</em></a>) – Created at</p></li>
+<li><p><strong>updated_at</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(in Django v5.1)"><em>DateTimeField</em></a>) – Updated at</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.first_name">
+<span class="sig-name descname"><span class="pre">first_name</span></span><a class="headerlink" href="#polls.models.UserProfile.first_name" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>First name</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.last_name">
+<span class="sig-name descname"><span class="pre">last_name</span></span><a class="headerlink" href="#polls.models.UserProfile.last_name" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Last name</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.username">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#polls.models.UserProfile.username" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Username</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.password_hash">
+<span class="sig-name descname"><span class="pre">password_hash</span></span><a class="headerlink" href="#polls.models.UserProfile.password_hash" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Password hash</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.role">
+<span class="sig-name descname"><span class="pre">role</span></span><a class="headerlink" href="#polls.models.UserProfile.role" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Role</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.contact_info">
+<span class="sig-name descname"><span class="pre">contact_info</span></span><a class="headerlink" href="#polls.models.UserProfile.contact_info" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.TextField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextField</span></code></a></p>
+<p>Contact info</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.created_at">
+<span class="sig-name descname"><span class="pre">created_at</span></span><a class="headerlink" href="#polls.models.UserProfile.created_at" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DateTimeField</span></code></a></p>
+<p>Created at</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.updated_at">
+<span class="sig-name descname"><span class="pre">updated_at</span></span><a class="headerlink" href="#polls.models.UserProfile.updated_at" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DateTimeField</span></code></a></p>
+<p>Updated at</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.UserProfile.DoesNotExist">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#polls.models.UserProfile.DoesNotExist" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.UserProfile.MultipleObjectsReturned">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#polls.models.UserProfile.MultipleObjectsReturned" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.UserProfile.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.UserProfile.get_next_by_created_at" title="Link to this definition">¶</a></dt>
+<dd><p>Finds next instance based on <a class="reference internal" href="#polls.models.UserProfile.created_at" title="polls.models.UserProfile.created_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_at</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_next_by_FOO" title="(in Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_next_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.UserProfile.get_next_by_updated_at">
+<span class="sig-name descname"><span class="pre">get_next_by_updated_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">updated_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.UserProfile.get_next_by_updated_at" title="Link to this definition">¶</a></dt>
+<dd><p>Finds next instance based on <a class="reference internal" href="#polls.models.UserProfile.updated_at" title="polls.models.UserProfile.updated_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">updated_at</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_next_by_FOO" title="(in Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_next_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.UserProfile.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.UserProfile.get_previous_by_created_at" title="Link to this definition">¶</a></dt>
+<dd><p>Finds previous instance based on <a class="reference internal" href="#polls.models.UserProfile.created_at" title="polls.models.UserProfile.created_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_at</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_previous_by_FOO" title="(in Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_previous_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.UserProfile.get_previous_by_updated_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_updated_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">updated_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.UserProfile.get_previous_by_updated_at" title="Link to this definition">¶</a></dt>
+<dd><p>Finds previous instance based on <a class="reference internal" href="#polls.models.UserProfile.updated_at" title="polls.models.UserProfile.updated_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">updated_at</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_previous_by_FOO" title="(in Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_previous_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#polls.models.UserProfile.id" title="Link to this definition">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(in Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BigAutoField</span></code></a></p>
+<p>Primary key: ID</p>
+<p>A wrapper for a deferred-loading field. When the value is read from this</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.UserProfile.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#polls.models.UserProfile.objects" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 <dl class="py function" id="module-polls.views">
 <dt class="sig sig-object py" id="polls.views.index">
 <span class="sig-prename descclassname"><span class="pre">polls.views.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.index" title="Link to this definition">¶</a></dt>
@@ -249,6 +383,7 @@ one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Модули</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#polls.models.Question"><code class="docutils literal notranslate"><span class="pre">Question</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#polls.models.Choice"><code class="docutils literal notranslate"><span class="pre">Choice</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.models.UserProfile"><code class="docutils literal notranslate"><span class="pre">UserProfile</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#polls.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
 </ul>
 </li>
