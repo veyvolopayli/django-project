@@ -20,14 +20,10 @@ class WebsiteTestUser(HttpUser):
     def nocodb(self):
         self.client.get("https://reimagined-succotash-954rppxpp772xpjj.github.dev/nocodb-data/")
 
-    @task(5)
+    @task(3)
     def admin(self):
         self.client.post("https://reimagined-succotash-954rppxpp772xpjj.github.dev/admin/login/?next=/admin/",
                          {"username": "admin", "password": "127823"})
-
-    @task(3)
-    def virtuals(self):
-        self.client.get("https://reimagined-succotash-954rppxpp772xpjj.github.dev/polls/virtuals/")
 
     @task(4)
     def polls(self):
