@@ -2,6 +2,9 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from rest_framework import serializers
+from rest_framework import viewsets
+from .models import Question, Choice, UserProfile
+from .serializers import QuestionSerializer, ChoiceSerializer, UserProfileSerializer
 
 from .models import Question, Choice, UserProfile
 
@@ -41,20 +44,14 @@ def user_profile(request, username):
     user = get_object_or_404(UserProfile, username=username)
     return render(request, 'app/profile.html', {'user': user})
 
+class QuestionViewSet(viewsets.ModelViewSet):
+    queryset = Question.objects.all()
+    serializer_class = QuestionSerializer
 
-class QuestionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Question
-        fields = ['id', 'question_text', 'pub_date']
+class ChoiceViewSet(viewsets.ModelViewSet):
+    queryset = Choice.objects.all()
+    serializer_class = ChoiceSerializer
 
-
-class ChoiceSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Choice
-        fields = ['id', 'question', 'choice_text', 'votes']
-
-
-class UserProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UserProfile
-        fields = ['id', 'first_name', 'last_name', 'username', 'role', 'contact_info', 'created_at', 'updated_at']
+class UserProfileViewSet(viewsets.ModelViewSet):
+    queryset = UserProfile.objects.all()
+    serializer_class = UserProfileSerializer
